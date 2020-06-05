@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ak.apps.thirtydaysofkotlin.feature.finishgame.FinishGameActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/celebration" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorWhiteOpacity50"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp20">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_semibold"
+                android:gravity="end"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp24"
+                tools:text="Score: 0 / 10" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp25"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/acbtn_play_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp5"
+                    android:background="@drawable/drawable_round_primary_solid"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:paddingStart="@dimen/dp20"
+                    android:paddingTop="@dimen/dp10"
+                    android:paddingEnd="@dimen/dp20"
+                    android:paddingBottom="@dimen/dp10"
+                    android:text="@string/play_again"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp20" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/acbtn_go_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:background="@drawable/drawable_round_primary_solid"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:paddingStart="@dimen/dp20"
+                    android:paddingTop="@dimen/dp10"
+                    android:paddingEnd="@dimen/dp20"
+                    android:paddingBottom="@dimen/dp10"
+                    android:text="@string/go_home"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp20" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Number Game</string>
+
+    <!-- Dashboard -->
+    <string name="games_played">Games Played: %1$d</string>
+    <string name="level">Level: %1$d</string>
+    <string name="forward_and_backward_numbers">Forward and Backward Numbers</string>
+    <string name="lets_play">Let\'s Play</string>
+
+    <!-- Create Game -->
+    <string name="creating_game">Creating Game</string>
+
+    <!-- Finish Game -->
+    <string name="play_again">Play Again</string>
+    <string name="go_home">Go Home</string>
+
+    <!-- Game -->
+    <string name="question_no">Q. %1$d / 10</string>
+    <string name="score">Score: %1$d / 10</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="option_4">Option 4</string>
+
+    <!-- Forward Backward Game -->
+    <!--    <string name="game1">Count upwards from %1$d, which number comes next?(In Digit)</string>-->
+    <string name="game1">Which number comes after %1$d?</string>
+    <!--    <string name="game2">Count downwards from %1$d, which number comes next?(In Digit)</string>-->
+    <string name="game2">Which number comes before %1$d?</string>
+    <string name="game3">Count upwards from %1$d, which number comes next?(In Words)</string>
+    <string name="game4">Count downwards from %1$d, which number comes next?(In Words)</string>
+    <string name="game5">Count upwards from %1$s, which number comes next?(In Digit)</string>
+    <string name="game6">Count downwards from %1$s, which number comes next? (In Digit)</string>
+    <string name="game7">Count upwards from %1$s, which number comes next?(In Words)</string>
+    <string name="game8">Count downwards from %1$s, which number comes next? (In Words)</string>
+
+    <string-array name="upward_downward_games">
+        <item>@string/game1</item>
+        <item>@string/game2</item>
+        <item>@string/game3</item>
+        <item>@string/game4</item>
+        <item>@string/game5</item>
+        <item>@string/game6</item>
+        <item>@string/game7</item>
+        <item>@string/game8</item>
+    </string-array>
+
+</resources>

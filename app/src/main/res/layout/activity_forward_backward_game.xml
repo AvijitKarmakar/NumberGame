@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".feature.forwardbackwardgame.ForwardBackwardGameActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tb_game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp20"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/actv_ques_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        tools:text="Q. 0 / 10" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/actv_score"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:gravity="end"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        tools:text="Score: 0 / 10" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/actv_fw_bw_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="@dimen/dp20"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/sp24"
+                    tools:text="@string/game1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/actv_opt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:layout_marginBottom="@dimen/dp20"
+                        android:background="@drawable/drawable_round_cloudy_stroke"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:gravity="center"
+                        android:padding="@dimen/dp15"
+                        android:tag="1"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp20"
+                        tools:text="@string/option_1" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/actv_opt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/drawable_round_cloudy_stroke"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:gravity="center"
+                        android:padding="@dimen/dp15"
+                        android:tag="2"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp20"
+                        tools:text="@string/option_2" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/actv_opt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:layout_marginBottom="@dimen/dp20"
+                        android:background="@drawable/drawable_round_cloudy_stroke"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:gravity="center"
+                        android:padding="@dimen/dp15"
+                        android:tag="3"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp20"
+                        tools:text="@string/option_3" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/actv_opt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp20"
+                        android:background="@drawable/drawable_round_cloudy_stroke"
+                        android:fontFamily="@font/opensans_semibold"
+                        android:gravity="center"
+                        android:padding="@dimen/dp15"
+                        android:tag="4"
+                        android:text="@string/option_4"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/sp20" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

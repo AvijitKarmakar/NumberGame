@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".feature.dashboard.DashboardActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actv_games_played"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp20"
+            android:fontFamily="@font/opensans_bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp16"
+            tools:text="Games Played: 10" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actv_experience_lvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/dp20"
+            android:fontFamily="@font/opensans_bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp16"
+            tools:text="Level: 10" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp15">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="@string/forward_and_backward_numbers"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/sp20" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/acbtn_lets_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/drawable_round_primary_solid"
+                android:fontFamily="@font/opensans_semibold"
+                android:paddingStart="@dimen/dp20"
+                android:paddingTop="@dimen/dp10"
+                android:paddingEnd="@dimen/dp20"
+                android:paddingBottom="@dimen/dp10"
+                android:text="@string/lets_play"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp20" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>
